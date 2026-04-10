@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Merge Sort Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>📊 Merge Sort Dashboard</h1>
+
+<div class="controls">
+    <input type="text" id="name" placeholder="Item Name">
+    <input type="number" id="value" placeholder="Value">
+    <button onclick="addItem()">Add Item</button>
+
+    <select id="order">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+
+    <button onclick="loadData()">Sort</button>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+
+</html>
